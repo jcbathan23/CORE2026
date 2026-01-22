@@ -1,0 +1,170 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0b2530 0%, #1f3541 100%);
+}
+
+/* Sidebar */
+.sidebar,
+.sidebar.bg-dark { /* override bootstrap bg-dark */
+    width: 250px;
+    background: linear-gradient(180deg, #2b3f4e 0%, #1f3442 100%) !important;
+    color: #e6edf3;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.25);
+}
+
+.sidebar h4 {
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    background: transparent;
+    font-size: 18px;
+}
+
+.sidebar a {
+    color: #dbe7f3;
+    text-decoration: none;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background: transparent;
+    border: 1px solid transparent;
+    margin: 10px 8px;
+    transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease, transform 0.15s ease;
+}
+
+.sidebar a:hover {
+    background: linear-gradient(180deg, rgba(255,255,255,0.18), rgba(255,255,255,0.08));
+    color: #ffffff;
+    border-color: rgba(255,255,255,0.20);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.18);
+    transform: translateY(-2px);
+}
+
+.sidebar a i {
+    margin-right: 10px;
+}
+
+/* Main content */
+.main-content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background: #0f172a;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #e6edf3;
+}
+
+.navbar-text {
+    margin-left: 15px;
+}
+
+.pending-alert {
+    background: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.active-alert {
+    background: #28a745;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    margin-right: 15px;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.card.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* Active state helper for provider sidebar if needed */
+.sidebar a.active {
+    background: linear-gradient(180deg, rgba(255,255,255,0.26), rgba(255,255,255,0.12));
+    color: #ffffff;
+    border: 1px solid rgba(255,255,255,0.38);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.35);
+}
+
+/* Section divider with centered label (match admin) */
+.section-divider {
+    position: relative;
+    margin: 8px 10px 18px;
+    height: 22px;
+}
+.section-divider::before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0; top: 50%;
+    height: 1px;
+    background: rgba(255,255,255,0.12);
+}
+.section-divider .section-label {
+    position: absolute;
+    left: 50%; top: 50%; transform: translate(-50%, -50%);
+    padding: 6px 12px;
+    background: rgba(255,255,255,0.06);
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 10px;
+    color: #e6edf3;
+    font-weight: 800;
+    letter-spacing: 1.2px;
+    font-size: 12px;
+}
+
+/* ==============================
+   Provider: Table styles on dark
+   ============================== */
+.table {
+  color: #e6edf3;
+  background-color: transparent; /* keep background from body gradient */
+  border-color: rgba(255,255,255,0.10);
+}
+.table > :not(caption) > * > * {
+  background-color: transparent;
+  color: #e6edf3;
+  border-color: rgba(255,255,255,0.10);
+}
+/* Header styling for table-secondary */
+.table thead,
+.table-secondary {
+  color: #e6edf3 !important;
+  background-color: #1f2937 !important; /* slate-800 */
+  border-color: rgba(255,255,255,0.12) !important;
+}
+/* Zebra striping */
+.table-striped > tbody > tr:nth-of-type(odd) > * {
+  --bs-table-accent-bg: rgba(255,255,255,0.03);
+  color: #e6edf3;
+}
+/* Hover state */
+.table-hover > tbody > tr:hover > * {
+  background-color: rgba(148,163,184,0.12);
+  color: #ffffff;
+}
+/* Links inside tables */
+table a { color: #93c5fd; }
+table a:hover { color: #bfdbfe; }
+/* Badges */
+.badge.bg-secondary { background-color: #475569 !important; color: #e6edf3 !important; }
+.badge.bg-warning { color: #1f2937 !important; }
+.badge.bg-info { color: #0b1220 !important; }

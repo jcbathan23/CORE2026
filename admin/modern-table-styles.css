@@ -1,0 +1,407 @@
+/* Modern Table Styles for Fleet Management System */
+
+/* Modern Table Container */
+.modern-table-container {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(43, 63, 78, 0.08);
+    overflow: hidden;
+    border: 1px solid rgba(43, 63, 78, 0.06);
+    margin-bottom: 2rem;
+}
+
+.modern-table {
+    margin-bottom: 0;
+    border: none;
+}
+
+.modern-table thead {
+    background: linear-gradient(135deg, #2b3f4e 0%, #1f3442 100%);
+    color: #fff;
+}
+
+.modern-table thead th {
+    border: none;
+    padding: 1rem 1.25rem;
+    font-weight: 600;
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    border-bottom: 2px solid rgba(255,255,255,0.1);
+}
+
+.modern-table tbody tr {
+    border-bottom: 1px solid rgba(43, 63, 78, 0.05);
+    transition: all 0.3s ease;
+}
+
+.modern-table tbody tr:hover {
+    background-color: rgba(43, 63, 78, 0.02);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(43, 63, 78, 0.08);
+}
+
+.modern-table tbody td {
+    padding: 1.25rem;
+    vertical-align: middle;
+    border: none;
+    font-size: 0.9rem;
+}
+
+/* Modern Header Section */
+.modern-header {
+    margin-bottom: 2rem;
+}
+
+.modern-header h3, .modern-header h4 {
+    color: #2b3f4e;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.modern-header p {
+    color: #6c757d;
+    margin-bottom: 0;
+    font-size: 0.9rem;
+}
+
+/* Modern Buttons */
+.btn-modern-primary {
+    background: lightgrey;
+    border: none;
+    color: black;
+    padding: 0.75rem 1.5rem;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(43, 63, 78, 0.2);
+}
+
+.btn-modern-primary:hover {
+    background: #c0c0c0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(43, 63, 78, 0.3);
+    color: black;
+}
+
+.btn-modern-edit {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+    border: none;
+    color: #212529;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    margin-right: 0.25rem;
+}
+
+.btn-modern-edit:hover {
+    background: linear-gradient(135deg, #e0a800, #d39e00);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(255, 193, 7, 0.3);
+    color: #212529;
+}
+
+.btn-modern-delete {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    border: none;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+}
+
+.btn-modern-delete:hover {
+    background: linear-gradient(135deg, #c82333, #bd2130);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(220, 53, 69, 0.3);
+    color: white;
+}
+
+.btn-modern-view {
+    background: linear-gradient(135deg, #17a2b8, #138496);
+    border: none;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    margin-right: 0.25rem;
+}
+
+.btn-modern-view:hover {
+    background: linear-gradient(135deg, #138496, #117a8b);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(23, 162, 184, 0.3);
+    color: white;
+}
+
+.btn-modern-success {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    border: none;
+    color: white;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    margin-right: 0.25rem;
+}
+
+.btn-modern-success:hover {
+    background: linear-gradient(135deg, #1e7e34, #1c7430);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(40, 167, 69, 0.3);
+    color: white;
+}
+
+.btn-modern-archive {
+    background: linear-gradient(135deg, #fd7e14, #e8590c);
+    border: none;
+    color: lightgrey;
+    padding: 0.5rem 0.75rem;
+    border-radius: 8px;
+    font-size: 0.875rem;
+    transition: all 0.3s ease;
+    margin-right: 0.25rem;
+}
+
+.btn-modern-archive:hover {
+    background: linear-gradient(135deg, #e8590c, #dc5200);
+    transform: translateY(-1px);
+    box-shadow: 0 2px 8px rgba(253, 126, 20, 0.3);
+    color: white;
+}
+
+/* Modern Badges */
+.modern-badge {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.badge-admin {
+    background: linear-gradient(135deg, #dc3545, #c82333);
+    color: white;
+}
+
+.badge-user {
+    background: linear-gradient(135deg, #007bff, #0056b3);
+    color: white;
+}
+
+.badge-service-provider {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    color: white;
+}
+
+.badge-pending {
+    background: linear-gradient(135deg, #ffc107, #e0a800);
+    color: #212529;
+}
+
+.badge-active {
+    background: linear-gradient(135deg, #28a745, #1e7e34);
+    color: white;
+}
+
+.badge-inactive {
+    background: linear-gradient(135deg, #6c757d, #5a6268);
+    color: white;
+    box-shadow: 0 2px 4px rgba(108, 117, 125, 0.3);
+}
+
+.badge-archived {
+    background: linear-gradient(135deg, #fd7e14, #e8590c);
+    color: white;
+    box-shadow: 0 2px 4px rgba(253, 126, 20, 0.3);
+}
+
+.user-email, .company-name, .contact-info {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.password-display, .code-display {
+    background: #f8f9fa;
+    color: #6c757d;
+    padding: 0.375rem 0.75rem;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    border: 1px solid #e9ecef;
+    font-family: 'Courier New', monospace;
+}
+
+/* Custom Scrollbar */
+.table-responsive {
+    border-radius: 16px;
+    max-height: 600px;
+    overflow-y: auto;
+}
+
+.table-responsive::-webkit-scrollbar {
+    width: 6px;
+}
+
+.table-responsive::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb {
+    background: #2b3f4e;
+    border-radius: 10px;
+}
+
+.table-responsive::-webkit-scrollbar-thumb:hover {
+    background: #1f3442;
+}
+
+/* Action Button Groups */
+.action-buttons {
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 3rem 2rem;
+    color: #6c757d;
+}
+
+.empty-state i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .modern-table-container {
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border-radius: 8px;
+    }
+    
+    .modern-table {
+        min-width: 600px;
+        font-size: 0.8rem;
+    }
+    
+    .modern-table thead th {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.75rem;
+        white-space: nowrap;
+    }
+    
+    .modern-table tbody td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.8rem;
+        white-space: nowrap;
+    }
+    
+    .btn-modern-edit, .btn-modern-delete, .btn-modern-view, .btn-modern-success, .btn-modern-archive {
+        padding: 0.375rem 0.5rem;
+        font-size: 0.75rem;
+        margin: 0.125rem;
+    }
+    
+    .modern-badge {
+        padding: 0.25rem 0.5rem;
+        font-size: 0.65rem;
+    }
+    
+    .action-buttons {
+        min-width: 120px;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 576px) {
+    .modern-table {
+        min-width: 500px;
+        font-size: 0.75rem;
+    }
+    
+    .modern-table thead th {
+        padding: 0.5rem 0.375rem;
+        font-size: 0.7rem;
+    }
+    
+    .modern-table tbody td {
+        padding: 0.5rem 0.375rem;
+        font-size: 0.75rem;
+    }
+    
+    .btn-modern-edit, .btn-modern-delete, .btn-modern-view, .btn-modern-success, .btn-modern-archive {
+        padding: 0.25rem 0.375rem;
+        font-size: 0.7rem;
+        border-radius: 4px;
+    }
+    
+    .modern-badge {
+        padding: 0.2rem 0.4rem;
+        font-size: 0.6rem;
+    }
+}
+
+/* Dark mode responsive styles */
+body.dark-mode .modern-table-container {
+    background: rgba(31, 52, 66, 0.95);
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .modern-table thead {
+    background: linear-gradient(135deg, #1f3442 0%, #2b3f4e 100%);
+}
+
+body.dark-mode .modern-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .modern-header h3, 
+body.dark-mode .modern-header h4 {
+    color: #e6edf3;
+}
+
+body.dark-mode .modern-header p {
+    color: #cbd5e1;
+}
+
+body.dark-mode .user-email .fw-medium, 
+body.dark-mode .company-name .fw-medium, 
+body.dark-mode .contact-info .fw-medium {
+    color: #e6edf3;
+}
+
+body.dark-mode .password-display, 
+body.dark-mode .code-display {
+    background: rgba(43, 63, 78, 0.8);
+    color: #cbd5e1;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .empty-state {
+    color: #cbd5e1;
+}
+
+body.dark-mode .table-responsive::-webkit-scrollbar-track {
+    background: rgba(43, 63, 78, 0.5);
+}
+
+body.dark-mode .table-responsive::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .table-responsive::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
